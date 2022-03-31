@@ -1,0 +1,22 @@
+{
+  "name": "responsivefrontpagemock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomIHAU/responsiveFrontPageMock.git"
+  },
+  "scripts": {
+    "start": "cd client && npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomIHAU/resposniveFrontPageMock/issues"
+  },
+  "homepage": "https://github.com/TomIHAU/resposniveFrontPageMock#readme"
+}
