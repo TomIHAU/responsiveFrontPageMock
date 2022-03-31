@@ -1,51 +1,33 @@
 import React, { useState } from "react";
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("carSlide");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
-
 export default function BannerCarousel() {
   const [shownSlide, setShownSlide] = useState(0);
 
+  function handleSet(arg) {
+    setShownSlide(arg);
+  }
+
+  const bannerImgArr = [
+    "./images/Q Imaging Mock Up-10.png",
+    "./images/Q Imaging Mock Up-10.png",
+    "./images/Q Imaging Mock Up-11.png",
+    "./images/Q Imaging Mock Up-10.png",
+  ];
   return (
     <div className="bannerCar">
-      <div className="carSlide">
-        {" "}
-        <img src="./images/Q Imaging Mock Up-10.png" alt="Main Banner"></img>
-      </div>
-      <div className="carSlide">
-        {" "}
-        <img src="./images/Q Imaging Mock Up-10.png" alt="Main Banner"></img>
-      </div>
-      <div className="carSlide">
-        {" "}
-        <img src="./images/Q Imaging Mock Up-11.png" alt="Main Banner"></img>
-      </div>
-      <div className="carSlide">
-        {" "}
-        <img src="./images/Q Imaging Mock Up-11.png" alt="Main Banner"></img>
-      </div>
+      {bannerImgArr.map((ele, i) => {
+        return (
+          <div
+            className="carSlide"
+            style={
+              i === shownSlide ? { display: "block" } : { display: "none" }
+            }
+          >
+            <img src={ele} key={i} alt="Main Banner"></img>
+          </div>
+        );
+      })}
+
       <div className="bannerCarInfo">
         <h2>Carousel Image Title</h2>
         <p>
@@ -53,10 +35,17 @@ export default function BannerCarousel() {
           nonummy nibh euismod tincidunt ut laoreet{" "}
         </p>
         <div className="dotBox">
-          <span class="dot" onClick={currentSlide(1)}></span>
-          <span class="dot" onClick={currentSlide(2)}></span>
-          <span class="dot" onClick={currentSlide(3)}></span>
-          <span class="dot" onClick={currentSlide(4)}></span>
+          {bannerImgArr.map((ele, i) => {
+            return (
+              <span
+                className="dot"
+                key={i}
+                onClick={(e) => {
+                  handleSet(i);
+                }}
+              ></span>
+            );
+          })}
         </div>
       </div>
     </div>

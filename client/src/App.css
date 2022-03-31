@@ -1,7 +1,7 @@
 :root {
   --greyText: #666666;
   --lightBlue: #225061;
-  --darkBlue: #143c4b;
+  --darkBlue: #164657;
   --buttonBlue: #3e505f;
 }
 body {
@@ -32,19 +32,28 @@ button {
 .search input {
   width: 100%;
 }
+.NavSearchBox h2 {
+  padding: 7px;
+}
 .NavSearchBox {
   background-color: var(--darkBlue);
   color: white;
   padding: 7px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  width: 280px;
+  height: 120px;
 }
 .NavSearchBox select {
   color: white;
   background-color: var(--darkBlue);
   border: 1px solid #ffffff;
-  padding: 2px;
+  padding: 6px;
+}
+.NavSearchBox input {
+  padding: 6px;
 }
 
 .bannerCar {
@@ -184,7 +193,7 @@ th {
   padding: 0 20px 20px 0;
 }
 td {
-  padding: 10px;
+  padding: 10px 20px 20px 0;
 }
 footer {
   color: white;
