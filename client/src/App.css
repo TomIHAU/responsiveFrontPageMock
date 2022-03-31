@@ -4,3 +4,22 @@
   --darkBlue: #143c4b;
   --buttonBlue: #3e505f;
 }
+body {
+  color: var(--greyText);
+}
+.navBar {
+  display: flex;
+}
+.productInfo {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--darkBlue);
+}
+footer div {
+  display: flex;
+}
