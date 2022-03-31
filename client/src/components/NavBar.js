@@ -34,7 +34,7 @@ export default function NavBar() {
           </div>
         </div>
         <div className="NavSearchBox">
-          <h2>Find Ink and Toner</h2>
+          <h2>Find Ink {`&`} Toner</h2>
           <select>
             <option>Choose Brand</option>
             <option>Lorem Ipsum</option>

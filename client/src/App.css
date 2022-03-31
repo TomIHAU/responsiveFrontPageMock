@@ -7,6 +7,14 @@
 body {
   color: var(--greyText);
 }
+button {
+  color: white;
+  background-color: var(--buttonBlue);
+  border-radius: 0;
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+}
 .navBar {
   display: flex;
   padding: 40px 30px;
@@ -21,6 +29,9 @@ body {
 .navBarRight {
   display: flex;
 }
+.search input {
+  width: 100%;
+}
 .NavSearchBox {
   background-color: var(--darkBlue);
   color: white;
@@ -29,31 +40,80 @@ body {
   flex-direction: column;
   text-align: center;
 }
+.NavSearchBox select {
+  color: white;
+  background-color: var(--darkBlue);
+  border: 1px solid #ffffff;
+  padding: 2px;
+}
+
 .bannerCar {
   padding: 20px 0;
+  position: relative;
 }
 .bannerCar img {
   height: 400px;
   width: 100%;
+  object-fit: cover;
 }
 .bigLinksImgCont {
-  padding: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 .bigLinksImgCont img {
   height: 500px;
 }
+.bannerCarInfo h2 {
+  font-size: larger;
+}
+.bannerCarInfo {
+  position: absolute;
+  color: white;
+  background-color: #143c4bcc;
+  top: 50%;
+  left: 50px;
+  height: 110px;
+  width: 400px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.imageLink {
+  position: relative;
+  margin: 20px;
+  cursor: pointer;
+}
+.imageLink h3 {
+  color: white;
+  background-color: #143c4bdc;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+}
 .brandScroll {
   height: 200px;
 }
+.individualLinks {
+  margin: 0 40px;
+}
+.featureBtn {
+  margin-top: 30px;
+}
 .product {
-  margin: 0 30px;
   height: 200px;
   border: solid #9b9b9b;
   border-width: 1px 0;
 }
 .imgPlaceholder {
-  min-height: 150px;
-  min-width: 200px;
+  height: 150px;
+  width: 200px;
   background-color: #d1d1d1;
   border: solid 1px #afafaf;
 }
@@ -63,26 +123,28 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.innerProduct button {
-  color: white;
-  background-color: var(--buttonBlue);
-  border-radius: 0;
-  border: none;
-
-  padding: 10px 40px;
+.innerProduct div {
+  display: flex;
 }
+
 .productInfo {
-  height: 100%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
+.contactLinks {
+  color: white;
+  background-color: var(--lightBlue);
+  margin-bottom: 3px;
+  padding: 40px;
+}
 footer {
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 20px;
   background-color: var(--darkBlue);
 }
 footer div {

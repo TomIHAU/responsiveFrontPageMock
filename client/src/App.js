@@ -9,14 +9,27 @@ function App() {
       <NavBar />
       <div className="bannerCar">
         <img src="./images/Q Imaging Mock Up-10.png" alt="Main Banner"></img>
+        <div className="bannerCarInfo">
+          <h2>Carousel Image Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet{" "}
+          </p>
+        </div>
       </div>
       <div className="bigLinks">
         <div className="bigLinksImgCont">
-          <img
-            src="./images/Q Imaging Mock Up-11.png"
-            alt="become a reseller"
-          ></img>
-          <img src="./images/Q Imaging Mock Up-12.png" alt="what's new"></img>
+          <div className="imageLink">
+            <img
+              src="./images/Q Imaging Mock Up-11.png"
+              alt="become a reseller"
+            ></img>
+            <h3>BECOME A RESELLER</h3>
+          </div>
+          <div className="imageLink">
+            <img src="./images/Q Imaging Mock Up-12.png" alt="what's new"></img>
+            <h3>WHAT'S NEW</h3>
+          </div>
         </div>
       </div>
       <div className="individualLinks">
@@ -26,7 +39,7 @@ function App() {
           <FrontPageProduct />
           <FrontPageProduct />
         </div>
-        <button>View all Featured Products</button>
+        <button className="featureBtn">View all Featured Products</button>
       </div>
       <img
         className="brandScroll"
