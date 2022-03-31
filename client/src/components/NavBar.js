@@ -19,7 +19,7 @@ export default function NavBar() {
         alt="QImaging Australia"
       ></img>
       <div className="navBarRight">
-        <div>
+        <div className="linksAndSearch">
           <ul className="navLinks">
             <li>Login/Register</li>
             <li>About Us</li>

@@ -9,9 +9,9 @@ export default function BannerCarousel() {
 
   const bannerImgArr = [
     "./images/Q Imaging Mock Up-10.png",
-    "./images/Q Imaging Mock Up-10.png",
+    "./images/Q Imaging Mock Up-12.png",
     "./images/Q Imaging Mock Up-11.png",
-    "./images/Q Imaging Mock Up-10.png",
+    "./images/Q Imaging Mock Up-13.png",
   ];
   return (
     <div className="bannerCar">
@@ -29,23 +29,27 @@ export default function BannerCarousel() {
       })}
 
       <div className="bannerCarInfo">
-        <h2>Carousel Image Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet{" "}
-        </p>
-        <div className="dotBox">
-          {bannerImgArr.map((ele, i) => {
-            return (
-              <span
-                className="dot"
-                key={i}
-                onClick={(e) => {
-                  handleSet(i);
-                }}
-              ></span>
-            );
-          })}
+        <div className="bannerCarInfoText">
+          <h2>Carousel Image Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet{" "}
+          </p>
+        </div>
+        <div className="dotBoxCont">
+          <div className="dotBox">
+            {bannerImgArr.map((ele, i) => {
+              return (
+                <span
+                  className="dot"
+                  key={i}
+                  onClick={(e) => {
+                    handleSet(i);
+                  }}
+                ></span>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

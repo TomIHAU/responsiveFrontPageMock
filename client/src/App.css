@@ -23,6 +23,20 @@ button {
 .navBar img {
   height: 100px;
 }
+.linksAndSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.navLinks li:not(:first-child) {
+  border-left: 1px solid var(--greyText);
+  margin-left: 0.7vw !important;
+  padding-left: 0.7vw !important;
+}
+.navLinks li {
+  padding-bottom: 2px;
+}
 .navLinks {
   display: flex;
 }
@@ -30,6 +44,7 @@ button {
   display: flex;
 }
 .search input {
+  text-align: center;
   width: 100%;
 }
 .NavSearchBox h2 {
@@ -82,24 +97,32 @@ button {
   top: 50%;
   left: 50px;
   height: 110px;
-  width: 400px;
+  width: 45%;
   padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.bannerCarInfoText {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+.dotBoxCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
 .dotBox {
+  width: 80px;
   text-align: center;
 }
-.carSlide {
-  display: none;
-}
+
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -141,6 +164,9 @@ button {
   font-size: 20px;
   text-align: center;
 }
+.featBtn {
+  margin: 30px 40px;
+}
 .brandScroll {
   height: 200px;
 }
@@ -165,7 +191,8 @@ button {
   padding: 30px 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 100px;
 }
 .innerProduct div {
   display: flex;
@@ -208,4 +235,70 @@ footer div {
 }
 footer div * {
   padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .navBar img {
+    height: 50px;
+    object-fit: contain;
+  }
+  .linksAndSearch {
+    padding: 10px;
+  }
+  .navBarRight {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bannerCarInfo {
+    width: 80%;
+    left: 0;
+    top: 58%;
+  }
+  .bigLinksImgCont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imageLink img {
+    height: 300px;
+  }
+  .featBtn {
+    margin: 20px 80px 30px;
+  }
+  .featureBtn {
+    margin: 20px 35px 30px;
+  }
+  .product {
+    height: auto;
+  }
+  .innerProduct {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+  .innerProduct div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .productInfo {
+    width: 100%;
+  }
+  table {
+    font-size: small;
+  }
+  td {
+    padding: 5px 10px 10px 0;
+  }
+  footer div {
+    padding: 5px 0;
+    font-size: small;
+  }
+}
+@media screen and (max-width: 500px) {
+  footer {
+    flex-direction: column;
+  }
 }
