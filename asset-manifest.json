@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c9bdf74.css",
-    "main.js": "/static/js/main.1bd762ef.js",
-    "index.html": "/index.html",
-    "main.5c9bdf74.css.map": "/static/css/main.5c9bdf74.css.map",
-    "main.1bd762ef.js.map": "/static/js/main.1bd762ef.js.map"
+    "main.css": "/responsiveFrontPageMock/static/css/main.5c9bdf74.css",
+    "main.js": "/responsiveFrontPageMock/static/js/main.1bd762ef.js",
+    "index.html": "/responsiveFrontPageMock/index.html",
+    "main.5c9bdf74.css.map": "/responsiveFrontPageMock/static/css/main.5c9bdf74.css.map",
+    "main.1bd762ef.js.map": "/responsiveFrontPageMock/static/js/main.1bd762ef.js.map"
   },
   "entrypoints": [
     "static/css/main.5c9bdf74.css",
