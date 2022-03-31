@@ -1,22 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import FrontPageProduct from "./components/FrontPageProduct";
+import BannerCarousel from "./components/BannerCarousel";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="bannerCar">
-        <img src="./images/Q Imaging Mock Up-10.png" alt="Main Banner"></img>
-        <div className="bannerCarInfo">
-          <h2>Carousel Image Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet{" "}
-          </p>
-        </div>
-      </div>
+      <BannerCarousel />
       <div className="bigLinks">
         <div className="bigLinksImgCont">
           <div className="imageLink">
