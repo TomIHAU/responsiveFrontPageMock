@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/responsiveFrontPageMock/static/css/main.b8fef6b2.css",
+    "main.css": "/responsiveFrontPageMock/static/css/main.f12b8473.css",
     "main.js": "/responsiveFrontPageMock/static/js/main.0db3bfe4.js",
     "index.html": "/responsiveFrontPageMock/index.html",
-    "main.b8fef6b2.css.map": "/responsiveFrontPageMock/static/css/main.b8fef6b2.css.map",
+    "main.f12b8473.css.map": "/responsiveFrontPageMock/static/css/main.f12b8473.css.map",
     "main.0db3bfe4.js.map": "/responsiveFrontPageMock/static/js/main.0db3bfe4.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8fef6b2.css",
+    "static/css/main.f12b8473.css",
     "static/js/main.0db3bfe4.js"
   ]
 }
