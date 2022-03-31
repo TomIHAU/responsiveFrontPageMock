@@ -1,9 +1,11 @@
 import "./App.css";
+
 import NavBar from "./components/NavBar";
 import FrontPageProduct from "./components/FrontPageProduct";
 import BannerCarousel from "./components/BannerCarousel";
 import ContactLinks from "./components/ContactLinks";
 import Footer from "./components/Footer";
+import { FiChevronDown } from "react-icons/fi";
 
 function App() {
   const products = [
