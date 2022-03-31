@@ -4,6 +4,9 @@
   --darkBlue: #164657;
   --buttonBlue: #3e505f;
 }
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 body {
   color: var(--greyText);
 }
@@ -46,6 +49,7 @@ button {
 .search input {
   text-align: center;
   width: 100%;
+  padding: 5px;
 }
 .NavSearchBox h2 {
   padding: 7px;
@@ -169,6 +173,8 @@ button {
 }
 .brandScroll {
   height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 .individualLinks {
   margin: 0 40px;
@@ -182,8 +188,9 @@ button {
   border-width: 1px 0;
 }
 .imgPlaceholder {
-  height: 150px;
-  width: 200px;
+  min-height: 150px;
+  min-width: 200px;
+  max-width: 200px;
   background-color: #d1d1d1;
   border: solid 1px #afafaf;
 }
@@ -196,6 +203,7 @@ button {
 }
 .innerProduct div {
   display: flex;
+
 }
 
 .productInfo {
@@ -282,6 +290,7 @@ footer div * {
   .innerProduct div {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
   .productInfo {
     width: 100%;

@@ -29,7 +29,7 @@ export default function NavBar() {
             <input
               type="text"
               placeholder="Insert SKU, Name or Printer Model"
-            />
+            ></input>
           </div>
         </div>
         <div className="NavSearchBox">
