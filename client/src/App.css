@@ -1,5 +1,5 @@
 :root {
-  --greyText: #888c8c;
+  --greyText: #666666;
   --lightBlue: #225061;
   --darkBlue: #143c4b;
   --buttonBlue: #3e505f;
@@ -9,14 +9,17 @@ body {
 }
 .navBar {
   display: flex;
-  padding: 10px;
+  padding: 40px 30px;
+  justify-content: space-between;
 }
 .navBar img {
   height: 100px;
 }
-.productInfo {
+.navLinks {
   display: flex;
-  justify-content: space-between;
+}
+.navBarRight {
+  display: flex;
 }
 .NavSearchBox {
   background-color: var(--darkBlue);
@@ -26,7 +29,57 @@ body {
   flex-direction: column;
   text-align: center;
 }
+.bannerCar {
+  padding: 20px 0;
+}
+.bannerCar img {
+  height: 400px;
+  width: 100%;
+}
+.bigLinksImgCont {
+  padding: 20px;
+}
+.bigLinksImgCont img {
+  height: 500px;
+}
+.brandScroll {
+  height: 200px;
+}
+.product {
+  margin: 0 30px;
+  height: 200px;
+  border: solid #9b9b9b;
+  border-width: 1px 0;
+}
+.imgPlaceholder {
+  min-height: 150px;
+  min-width: 200px;
+  background-color: #d1d1d1;
+  border: solid 1px #afafaf;
+}
+.innerProduct {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.innerProduct button {
+  color: white;
+  background-color: var(--buttonBlue);
+  border-radius: 0;
+  border: none;
+
+  padding: 10px 40px;
+}
+.productInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 footer {
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;

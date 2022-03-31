@@ -18,26 +18,31 @@ export default function NavBar() {
         src="./images/Q Imaging Mock Up-09.png"
         alt="QImaging Australia"
       ></img>
-      <div>
-        <ul className="navLinks">
-          <li>Login/Register</li>
-          <li>About Us</li>
-          <li>Products</li>
-          <li>Contact Us</li>
-        </ul>
-        <div className="search">
-          <input type="text" placeholder="Insert SKU, Name or Printer Model" />
+      <div className="navBarRight">
+        <div>
+          <ul className="navLinks">
+            <li>Login/Register</li>
+            <li>About Us</li>
+            <li>Products</li>
+            <li>Contact Us</li>
+          </ul>
+          <div className="search">
+            <input
+              type="text"
+              placeholder="Insert SKU, Name or Printer Model"
+            />
+          </div>
         </div>
-      </div>
-      <div className="NavSearchBox">
-        <h2>Find Ink and Toner</h2>
-        <select>
-          <option>Choose Brand</option>
-          <option>Lorem Ipsum</option>
-          <option>Lorem Ipsum</option>
-          <option>Lorem Ipsum</option>
-        </select>
-        <input type="text" placeholder="Product Search"></input>
+        <div className="NavSearchBox">
+          <h2>Find Ink and Toner</h2>
+          <select>
+            <option>Choose Brand</option>
+            <option>Lorem Ipsum</option>
+            <option>Lorem Ipsum</option>
+            <option>Lorem Ipsum</option>
+          </select>
+          <input type="text" placeholder="Product Search"></input>
+        </div>
       </div>
     </div>
   );
