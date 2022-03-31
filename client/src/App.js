@@ -2,8 +2,8 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import FrontPageProduct from "./components/FrontPageProduct";
 import BannerCarousel from "./components/BannerCarousel";
-import Footer from "./components/Footer";
 import ContactLinks from "./components/ContactLinks";
+import Footer from "./components/Footer";
 
 function App() {
   const products = [
