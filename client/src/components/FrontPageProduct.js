@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function NavBar() {
+export default function FrontPageProduct() {
   return (
     <div className="product">
       <div className="productInfo">

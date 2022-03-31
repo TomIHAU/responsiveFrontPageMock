@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import FrontPageProduct from "./components/FrontPageProduct";
 
 function App() {
   return (
@@ -19,7 +20,12 @@ function App() {
         </div>
       </div>
       <div className="individualLinks">
-        <div></div>
+        <div>
+          <FrontPageProduct />
+          <FrontPageProduct />
+          <FrontPageProduct />
+          <FrontPageProduct />
+        </div>
       </div>
       <img src="./images/Q Imaging Mock Up-13.png" alt="Our Brands"></img>
       <div className="contactLinks"></div>

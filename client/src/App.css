@@ -9,10 +9,22 @@ body {
 }
 .navBar {
   display: flex;
+  padding: 10px;
+}
+.navBar img {
+  height: 100px;
 }
 .productInfo {
   display: flex;
   justify-content: space-between;
+}
+.NavSearchBox {
+  background-color: var(--darkBlue);
+  color: white;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 footer {
   display: flex;
